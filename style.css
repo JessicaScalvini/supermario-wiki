@@ -73,6 +73,7 @@ a{
     background-color: aliceblue;
     color:#43b047;
     font-size: medium;
+    font-family: 'Grandstander';
 }
 
 .go:hover{
@@ -104,4 +105,40 @@ a{
     background-color: aliceblue;
     padding:20px;
     border-radius: 30px;;
+}
+
+.quote{
+    padding: 100px 200px;
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author{
+    align-self: flex-end;
+    font-size: 24px;
+    color: white;
+}
+
+.text-quote{
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+    font-style: oblique;
+
+}
+
+.text{
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text-header h1{
+    font-family: 'Grandstander';
+    font-size: 60px;
+    font-weight: bold;
 }
