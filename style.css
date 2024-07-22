@@ -52,12 +52,12 @@ a{
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-    max-width: 400px;
+    max-width: 500px;
     color:aliceblue
 }
 
 .img-hero{
-    max-height: 300px;
+    max-height: 400px;
 }
 
 .hero{
@@ -69,13 +69,39 @@ a{
 .go{
     padding:10px;
     border-radius: 10px;
-    border: 3px solid #73D5FC;
+    border: 2px solid #43b047;
     background-color: aliceblue;
-    color:#73D5FC;
+    color:#43b047;
     font-size: medium;
 }
 
 .go:hover{
-    background-color: #73D5FC;
+    background-color: #43b047;
     color: white;
+    border:solid 2px aliceblue;
+}
+
+
+.personaggi{
+    padding:100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:50px;
+    color: #e52521;
+}
+
+.cards-pers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+    margin-top: 20px;
+}
+
+.img-char{
+    max-width: 200px;
+    background-color: aliceblue;
+    padding:20px;
+    border-radius: 30px;;
 }
