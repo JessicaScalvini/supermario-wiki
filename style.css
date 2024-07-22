@@ -14,9 +14,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #73D5FC;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 50px;
+    padding-right: 100px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: transparent;
+    backdrop-filter: blur(10px);
 }
 
 .nav-items{
@@ -40,10 +47,16 @@ a{
 
 .header{
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 100px;
-    background-color: #43b047;
+    margin: 0px;
+    padding: 100px 200px;
+    background-image: url("Assets/mario-bros.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: aliceblue;
+    height: 800px;
 }
 
 .text-header{
@@ -52,7 +65,6 @@ a{
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-    max-width: 500px;
     color:aliceblue
 }
 
@@ -63,7 +75,6 @@ a{
 .hero{
     display:flex;
     justify-content: space-between;
-    gap:200px;
 }
 
 .go{
@@ -84,27 +95,42 @@ a{
 
 
 .personaggi{
-    padding:100px;
+    padding:100px 200px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     gap:50px;
     color: #e52521;
 }
 
+.personaggi h2{
+    align-self: center;
+}
+
 .cards-pers{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+
+}
+
+.personaggio{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap:50px;
-    margin-top: 20px;
+    gap:20px;
+}
+
+.scopri{
+    align-self: center;
 }
 
 .img-char{
-    max-width: 200px;
+    width: 200px;
+    height: auto;
     background-color: aliceblue;
     padding:20px;
-    border-radius: 30px;;
+    border-radius: 30px;
 }
 
 .quote{
@@ -114,6 +140,7 @@ a{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap:100px;
 }
 
 .author{
@@ -127,6 +154,7 @@ a{
     font-size: 28px;
     font-style: italic;
     font-style: oblique;
+    text-align: right;
 
 }
 
@@ -134,11 +162,16 @@ a{
     max-width: 700px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
 }
 
 .text-header h1{
     font-family: 'Grandstander';
-    font-size: 60px;
+    font-size: 90px;
     font-weight: bold;
+}
+
+.text-header p{
+    font-size: 24px;
 }
