@@ -12,6 +12,8 @@
 
 .nav-bar{
     display: flex;
+    margin: 20px;
+    border-radius: 15px;
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
@@ -22,8 +24,8 @@
     left: 0;
     right: 0;
     z-index: 999;
-    background: transparent;
-    backdrop-filter: blur(10px);
+    background: transparent, white;
+    backdrop-filter: blur(20px);
 }
 
 .nav-items{
@@ -65,7 +67,7 @@ a{
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-    color:aliceblue
+    color:aliceblue;
 }
 
 .img-hero{
@@ -78,19 +80,30 @@ a{
 }
 
 .go{
-    padding:10px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    align-self: center;
+    padding:20px;
+    font-size: 30px;
     border-radius: 10px;
-    border: 2px solid #43b047;
-    background-color: aliceblue;
-    color:#43b047;
-    font-size: medium;
+    border: transparent;
+    background-color: #43b047;
+    color:aliceblue;
     font-family: 'Grandstander';
 }
 
+
+
 .go:hover{
-    background-color: #43b047;
-    color: white;
-    border:solid 2px aliceblue;
+    background-color: aliceblue;
+    color: #43b047;
+}
+
+.go:active{
+    transform: scale(0.90);
 }
 
 
@@ -100,11 +113,13 @@ a{
     flex-direction: column;
     justify-content: center;
     gap:50px;
-    color: #e52521;
+    color: #049cd8;
 }
 
 .personaggi h2{
     align-self: center;
+    font-size: 60px;
+    font-family: 'Grandstander';
 }
 
 .cards-pers{
@@ -121,8 +136,37 @@ a{
     gap:20px;
 }
 
+.personaggio:hover{
+    transform: scale(0.95);
+    backdrop-filter: blur(20px);
+}
+
 .scopri{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
     align-self: center;
+    padding:20px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: transparent 1px solid;
+    background-color: #049cd8;
+    color:aliceblue;
+    font-family: 'Grandstander';
+}
+
+
+
+.scopri:hover{
+    background-color: white;
+    border: 1px solid #049cd8;
+    color: #049cd8;
+}
+
+.scopri:active{
+    transform: scale(0.90);
 }
 
 .img-char{
